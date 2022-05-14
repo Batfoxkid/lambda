@@ -1,0 +1,68 @@
+"Games"
+{
+	"tf"
+	{
+		"Signatures"
+		{
+			"CBaseNPCMaker::CanMakeNPC"
+			{
+				"library"	"server"
+				"linux"		"@_ZN13CBaseNPCMaker10CanMakeNPCEb"
+				"windows"	"\x55\x8B\xEC\xA1\x2A\x2A\x2A\x2A\x81\xEC\x98\x02\x00\x00"
+			}
+			"CEntityFactoryDictionary::Create"
+			{
+				"library"	"server"
+				"linux"		"@_ZN24CEntityFactoryDictionary6CreateEPKc"
+				"windows"	"\x55\x8B\xEC\x8B\x01\x56\x8B\x75\x08\x56\xFF\x50\x0C"
+			}
+		}
+		"Offsets"
+		{
+			"DeathNotice"
+			{
+				"linux"		"55"
+				"windows"	"54"
+			}
+			"MakeNPC"
+			{
+				"linux"		"196"
+				"windows"	"195"
+			}
+			"ChildPreSpawn"
+			{
+				"linux"		"197"
+				"windows"	"196"
+			}
+			"ChildPostSpawn"
+			{
+				"linux"		"198"
+				"windows"	"197"
+			}
+		}
+		"Functions"
+		{
+			"CEntityFactoryDictionary::Create"
+			{
+				"signature"	"CEntityFactoryDictionary::Create"
+				"callconv"	"thiscall"
+				"return"	"int"
+				"this"		"ignore"
+				"arguments"
+				{
+					"pClassName"
+					{
+						"type"	"charptr"
+					}
+				}
+			}
+			"MakeNPC"
+			{
+				"offset"		"MakeNPC"
+				"hooktype"		"entity"
+				"return"		"void"
+				"this"			"entity"
+			}
+		}
+	}
+}
